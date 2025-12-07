@@ -123,18 +123,51 @@
               </li>
             </ul>
           </section>
+          <hr className="section-divider" />
 
           
 
+          {/* CONTACT SECTION */}
+          <section id="contact" className="contact-section">
+            <h2 className="section-title">Contact</h2>
+
+            <form className="contact-form">
+              <div className="form-row">
+                <label htmlFor="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" required />
+              </div>
+
+              <div className="form-row">
+                <label htmlFor="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required />
+              </div>
+
+              <div className="form-row">
+                <label htmlFor="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Tell me about your project..."
+                  required
+                />
+              </div>
+
+              <button type="submit" className="btn-filled">
+                Send Message
+              </button>
+            </form>
+          </section>
+
           {/* FOOTER */}
-          <footer id="contact" className="footer">
-            <div class="gradient-group">
+          <footer className="footer">
+            <div className="gradient-group">
               <h3>Thank you for viewing!</h3>
               <br />
               <p>Stay in touch.</p>
             </div>
-
           </footer>
+
 
         </main>
       </>

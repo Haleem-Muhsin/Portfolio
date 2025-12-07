@@ -211,7 +211,7 @@ body {
 
 .services-section {
   width: 100%;
-  padding: 80px 50px;
+  padding: 80px 50px 0 50px;
   display: flex;
   justify-content: space-between;  /* LEFT | RIGHT */
   align-items: flex-start;
@@ -264,6 +264,7 @@ body {
   font-size: 24px;
   margin-bottom: 5px;
   color: #ffffff;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 /* FOOTER --------------------------------------------------------------- */
@@ -451,4 +452,44 @@ body {
   .footer {
     font-size: 130%;
   }
+}
+
+.contact-section {
+  padding: 80px 50px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-row label {
+  font-size: 14px;
+  color: #dddddd;
+}
+
+.form-row input,
+.form-row textarea {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #111;
+  color: #f5f5f5;
+  font-size: 14px;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+  outline: none;
+  border-color: #ff7a1a;
 }
