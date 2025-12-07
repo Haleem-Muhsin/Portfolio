@@ -330,3 +330,125 @@ body {
 .icon-btn:hover {
   background: rgba(255,255,255,0.25);
 }
+
+/* ======================= RESPONSIVE FIXES ======================= */
+
+/* --- Large Tablets & Small Laptops (max-width: 1200px) --- */
+@media (max-width: 1200px) {
+
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-card {
+    width: 90%;
+    padding: 50px;
+  }
+
+  .hero-image {
+    width: 320px;
+    height: 320px;
+  }
+
+  .services-section {
+    padding: 60px 30px;
+    gap: 40px;
+  }
+
+  .services-header {
+    padding-left: 5%;
+  }
+}
+
+/* --- Tablets (max-width: 900px) --- */
+@media (max-width: 900px) {
+
+  .navbar {
+    padding: 20px 30px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .section-title {
+    font-size: 54px;
+  }
+
+  .services-section {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .services-header {
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .services-header .section-title {
+    text-align: center;
+  }
+}
+
+/* --- Mobile (max-width: 600px) --- */
+@media (max-width: 600px) {
+
+  /* HERO */
+  .hero-section {
+    padding-top: 140px;
+    gap: 20px;
+  }
+
+  .hero-card {
+    width: 95%;
+    padding: 35px;
+  }
+
+  .hero-image {
+    width: 260px;
+    height: 260px;
+  }
+
+  .nav-links {
+    display: none; /* simple mobile behavior — hide navbar links */
+  }
+
+  /* SERVICES */
+  .services-section {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .services-list li {
+    margin-bottom: 20px;
+  }
+
+  .section-title {
+    font-size: 42px;
+  }
+
+  .services-header .section-title {
+    font-size: 42px;
+  }
+
+  .services-btn {
+    padding: 10px 18px;
+  }
+
+  /* PROJECTS */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card {
+    height: auto;
+  }
+
+  /* FOOTER */
+  .footer {
+    font-size: 130%;
+  }
+}
